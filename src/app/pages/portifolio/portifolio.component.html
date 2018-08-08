@@ -31,9 +31,9 @@
          <!-- corpo da pagina -->
     <div *ngIf="!produtosService.carregando" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
 
-         <a *ngFor="let produto of produtosService.produtos" routerLink="/item" class="animated tada rk-item ae-masonry__item">
+         <a *ngFor="let produto of produtosService.produtos" routerLink="/item/{{produto.cod}}" class="animated tada rk-item ae-masonry__item">
           <img src="assets/productos/{{produto.url}}.jpg" alt="">
-        <div class="item-meta">
+        <div routerLink="/item/{{produto.cod}}" class="item-meta">
           <h2>{{produto.titulo}}y</h2>
           <p>{{produto.categoria}}</p>
         </div>

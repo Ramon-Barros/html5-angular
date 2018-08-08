@@ -9,6 +9,8 @@ import { InfoPaginaService } from '../../services/info-pagina.service';
 export class FooterComponent implements OnInit {
 
   ano: number = new Date().getFullYear();
+  dia: number = new Date().getUTCDate();
+  mes: number = new Date().getMonth() + 1;
 
   constructor( public infoPaginaService: InfoPaginaService) { }
 

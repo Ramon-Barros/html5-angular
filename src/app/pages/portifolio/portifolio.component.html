@@ -34,7 +34,7 @@
          <a *ngFor="let produto of produtosService.produtos" routerLink="/item/{{produto.cod}}" class="animated tada rk-item ae-masonry__item">
           <img src="assets/productos/{{produto.url}}.jpg" alt="">
         <div routerLink="/item/{{produto.cod}}" class="item-meta">
-          <h2>{{produto.titulo}}y</h2>
+          <h2>{{produto.titulo}}</h2>
           <p>{{produto.categoria}}</p>
         </div>
       </a>

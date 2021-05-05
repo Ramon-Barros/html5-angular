@@ -14,7 +14,8 @@ export class ItemComponent implements OnInit {
   id: string;
   dia: number = new Date().getUTCDate();
   ano: number = new Date().getFullYear();
-  mes: number = new Date().getMonth() + 1;
+  mes: string = new Date().toDateString();
+
 
   constructor( private route: ActivatedRoute,
               public produtoServive: ProdutosService) { }

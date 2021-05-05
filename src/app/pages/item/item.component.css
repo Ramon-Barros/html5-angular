@@ -1,0 +1,14 @@
+.red-ar-l-rn-none{
+    background-color: #1b9ee3;
+    background-image: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 70%;
+    border-radius: 10%
+
+}
